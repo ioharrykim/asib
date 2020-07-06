@@ -131,3 +131,6 @@ body {
   font-size: 1.2rem;
   font-weight: 300;
 }
+.carousel-indicators.active {
+  color: #d1920b;
+}
