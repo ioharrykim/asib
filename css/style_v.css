@@ -85,7 +85,7 @@ body {
   opacity: 0.5;
 }
 .slide-content {
-  color: #fff;
+  color: rgb(163, 163, 163);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -118,6 +118,7 @@ body {
   font-weight: 700;
   height: 100%;
   width: 100%;
+  mix-blend-mode: screen;
   margin: 0 0 20% 7%;
   text-shadow: 0px 0px 3px #333;
   z-index: 1;
@@ -134,3 +135,16 @@ body {
 .carousel-indicators.active {
   color: #d1920b;
 }
+.playbutton {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  mix-blend-mode: overlay;
+}
+.playbutton:hover {
+  mix-blend-mode: exclusion;
+}
+/* .glyphicon-chevron-left:before{content:"\e079"}
+.glyphicon-chevron-right:before{content:"\e080"}
+.glyphicon-chevron-left,.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next,.carousel-control .icon-prev{position:absolute;top:50%;z-index:5;display:inline-block;margin-top:-10px}.carousel-control .glyphicon-chevron-left,.carousel-control .icon-prev{left:50%;margin-left:-10px}.carousel-control .glyphicon-chevron-right,.carousel-control .icon-next{right:50%;margin-right:-10px} */

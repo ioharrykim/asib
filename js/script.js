@@ -40,32 +40,35 @@ goNext.on('click', function(){
   if (currentSlide > totalSlides){
     currentSlide = 1;
   }
-  // goToSlide 함수 실행. 멤버변수로 currentSlide를 준다.
+  // goToSlide 함수 실행. 매개변수로 currentSlide를 준다.
   goToSlide(currentSlide);
 })
 
-
-
-  
 
 // 음악
 
 var musicPlay1 = document.getElementById("slider1");
 var musicPlay2 = document.getElementById("slider2");
 var musicPlay3 = document.getElementById("slider3");
+// 해당 문서에서 각 id값을 가진 요소를 찾아와서 변수로 선언.
 
+// 마우스 오버 시 발생하는 event.
 musicPlay1.addEventListener("mouseover", play1);
+// 함수 play1
 function play1() {
-  console.log("mouseover");
-  var music1 = document.getElementById("audio1");
-  music1.play();
+  console.log("mouseover"); // 마우스 오버 확인.
+  var music1 = document.getElementById("audio1"); // 해당 id값을 가진 요소를 찾아와서 변수로 선언하고,
+  music1.play(); // play()를 통해 실행(재생).
 }
+// 마우스 아웃 시 발생하는 event.
 musicPlay1.addEventListener("mouseleave", stop1);
+// 함수 stop1
 function stop1() {
-  console.log("mouseleave");
-  var music1 = document.getElementById("audio1");
-  music1.pause();
+  console.log("mouseleave"); // 마우스 아웃 확인.
+  var music1 = document.getElementById("audio1"); // 해당 id값을 가진 요소를 찾아와서 변수로 선언하고,
+  music1.pause(); // pause()를 통해 실행(일시정지).
 }
+// 위와 같은 식 반복.
 musicPlay2.addEventListener("mouseover", play2);
 function play2() {
   console.log("mouseover");
@@ -90,3 +93,4 @@ function stop3() {
   var music3 = document.getElementById("audio3");
   music3.pause();
 }
+

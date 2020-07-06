@@ -36,7 +36,7 @@ body {
 section.charcater {
     position: absolute;
     text-align: center;
-    top: 15%;
+    top: 8.5%;
     left: 50%;
     margin-left: -420px;
     display: flex;
@@ -47,7 +47,7 @@ figure.snip1200 {
     margin: 10px;
     min-width: 400px;
     max-width: 400px;
-    max-height: 70vh;
+    max-height: 85vh;
     width: 100%;
     background: #000000;
     color: #ffffff;
