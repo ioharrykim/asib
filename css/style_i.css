@@ -14,7 +14,7 @@ body {
   margin: 0;
 }
 
-.rolling-text {
+.maintype {
   display: inline-block;
   font-family: 'Playfair Display', serif;
   font-size: 48px;
@@ -25,13 +25,13 @@ body {
   overflow: hidden;
   color: #ececec;
 }
-.rolling-text:hover .letter, .rolling-text.play .letter {
+.maintype:hover .letter, .maintype.play .letter {
   transform: translateY(-100%);
 }
-.rolling-text .block:last-child {
+.maintype .block:last-child {
   color: #d1920b;
 }
-.rolling-text .letter {
+.maintype .letter {
   display: inline-block;
   transition: transform 0.6s cubic-bezier(0.76, 0, 0.24, 1);
 }
